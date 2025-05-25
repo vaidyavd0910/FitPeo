@@ -3,6 +3,9 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar'
+import Card from './components/card/card'
+import UpcomingSchedule from './components/DashboardMainContent/UpcomingSchedule/UpcomingSchedule'
+import CalendarView from './components/DashboardMainContent/CalendarView/CalendarView'
 
 function App() {
 
@@ -13,6 +16,9 @@ function App() {
       <Header/>
     </div> */}
     <Sidebar/>
+    <Card/>
+    <CalendarView/>
+    <UpcomingSchedule/>
     </>
   )
 }
