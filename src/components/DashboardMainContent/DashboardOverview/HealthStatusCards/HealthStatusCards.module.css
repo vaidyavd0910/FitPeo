@@ -1,0 +1,25 @@
+.cardBackground{
+    background-color: #f9fafd;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+.cardBackground:hover{
+   background-color: rgb(43, 43, 160);
+    color: white;
+}
+.headingPart{
+    display: flex;
+    gap: 15px;
+}
+.text{
+    font-weight: bold;
+}
+
+.date{
+    color: #888;
+    font-size:small ;
+}
+.date:hover{
+    color: white;
+}

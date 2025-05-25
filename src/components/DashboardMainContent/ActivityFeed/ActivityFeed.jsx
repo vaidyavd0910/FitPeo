@@ -7,7 +7,7 @@ export default function ActivityFeed() {
     <div style={{ background: '#f7f8ff', padding: '20px', borderRadius: '12px' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
         <h4 style={{ margin: 0 }}>Activity</h4>
-        <span style={{ fontSize: '12px', color: '#666' }}>3 appointments on this week</span>
+        <span style={{ fontSize: '12px', color: '#888' }}>3 appointments on this week</span>
       </div>
 
       <ResponsiveContainer width="100%" height={150}>
