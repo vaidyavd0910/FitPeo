@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar/Sidebar'
 import Card from './components/card/card'
 import UpcomingSchedule from './components/DashboardMainContent/UpcomingSchedule/UpcomingSchedule'
 import CalendarView from './components/DashboardMainContent/CalendarView/CalendarView'
+import ActivityFeed from './components/DashboardMainContent/ActivityFeed/ActivityFeed'
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
     <Card/>
     <CalendarView/>
     <UpcomingSchedule/>
+    <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}><ActivityFeed/></div>
+    
     </>
   )
 }
