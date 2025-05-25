@@ -1,26 +1,38 @@
-// menuData.js
+import {
+  RxDashboard
+} from "react-icons/rx";
+import {
+  FiShuffle,
+  FiCalendar,
+  FiClipboard,
+  FiBarChart,
+  FiMessageSquare,
+  FiPhone,
+  FiSettings
+} from "react-icons/fi";
+
 const sidebarData = {
-    logo: "Healthcare.",
-    sections: [
-      {
-        title: "General",
-        items: [
-          { name: "Dashboard", icon: "grid", active: true },
-          { name: "History", icon: "shuffle" },
-          { name: "Calendar", icon: "calendar" },
-          { name: "Appointments", icon: "clipboard" },
-          { name: "Statistics", icon: "bar-chart" }
-        ]
-      },
-      {
-        title: "Tools",
-        items: [
-          { name: "Chat", icon: "message-square" },
-          { name: "Support", icon: "phone" }
-        ]
-      }
-    ],
-    setting: { name: "Setting", icon: "settings" }
-  };
-  
-  export default sidebarData;
+  logo: "Healthcare.",
+  sections: [
+    {
+      title: "General",
+      items: [
+        { name: "Dashboard", icon: RxDashboard },
+        { name: "History", icon: FiShuffle },
+        { name: "Calendar", icon: FiCalendar },
+        { name: "Appointments", icon: FiClipboard },
+        { name: "Statistics", icon: FiBarChart }
+      ]
+    },
+    {
+      title: "Tools",
+      items: [
+        { name: "Chat", icon: FiMessageSquare },
+        { name: "Support", icon: FiPhone }
+      ]
+    }
+  ],
+  setting: { name: "Setting", icon: FiSettings }
+};
+
+export default sidebarData;
