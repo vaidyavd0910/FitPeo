@@ -23,13 +23,13 @@ function App() {
     <CalendarView/>
     <UpcomingSchedule/>
     <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}><ActivityFeed/></div> */}
-    <div style={{display:'flex'}}>
-      <div style={{width:'18%',height:'100%'}}><Sidebar/></div>
+    <div style={{display:'flex', height: '100vh'}}>
+      <div style={{width:'18%', height: '100%'}}><Sidebar/></div>
       <div style={{width:'39%'}}>
       <DashboardOverview/>
       </div>
       <div style={{backgroundColor:' #f9fafd',width:'43%',padding:'0px'}}>
-      <div style={{display:'flex', flexDirection:'column', padding:'15px'}}>
+      <div style={{display:'flex', flexDirection:'column'}}>
         <div>
           <CalendarView/>
         </div>
@@ -37,7 +37,6 @@ function App() {
       </div>
       </div>
     </div>
-    
     </>
   )
 }

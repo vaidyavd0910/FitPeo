@@ -4,36 +4,7 @@ import Card from '../../card/card'
 import { MdFace } from "react-icons/md";
 import styles from './CalenderView.module.css'
 import { BiSolidLeftArrowAlt ,BiSolidRightArrowAlt } from "react-icons/bi";
-const schedule = {
-  "2021-10-25": {
-    day: "Mon",
-    times: ["10:00", "11:00", "12:00"]
-  },
-  "2021-10-26": {
-    day: "Tues",
-    times: ["08:00", "09:00", "10:00"]
-  },
-  "2021-10-27": {
-    day: "Wed",
-    times: ["12:00","--" ,"13:00"]
-  },
-  "2021-10-28": {
-    day: "Thurs",
-    times: ["10:00", "11:00","--"]
-  },
-  "2021-10-29": {
-    day: "Fri",
-    times: ["--","14:00", "16:00"]
-  },
-  "2021-10-30": {
-    day: "Sat",
-    times: ["12:00", "14:00", "15:00"]
-  },
-  "2021-10-31": {
-    day: "Sun",
-    times: ["09:00", "11:00"]
-  }
-};
+import schedule from '../../../util/CalenderData/CalenderData';
 
 const selectedTime = {
   date: "2021-10-26",
