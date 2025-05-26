@@ -23,3 +23,8 @@
     cursor: pointer;
   }
   
+  @media screen and (max-width: 425px) {
+    .searchContainer{
+      width: 90%;
+    }
+  }

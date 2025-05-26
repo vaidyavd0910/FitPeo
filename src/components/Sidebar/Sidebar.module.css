@@ -55,14 +55,43 @@
 .menu{
   display: none;
 }
-@media screen and (max-width: 480px) {
-  .list{
-    display: none;
+
+@media screen and (max-width: 425px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: 100vh;
+    width: 150px;
+    z-index: 1000;
+    background-color: #f9fafd;
+    transition: left 0.3s ease-in-out;
+    padding: 0 20px;
   }
-  .setting{
-    display: none;
+
+  .open {
+    left: 0;
   }
-  .menu{
-    display:block ;
+
+  .menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .logo{
+    margin-top: 45px;
+  }
+  .list {
+    display: block;
+  }
+
+  .setting {
+    display: flex;
   }
 }

@@ -1,0 +1,46 @@
+.dashboardContainer {
+    padding: 10px 30px;
+  }
+  
+  .pageTitle {
+    font-family: 'Arial', sans-serif;
+    color: rgb(40, 40, 91);
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .overviewWrapper {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .healthStatusContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+  }
+  
+  .activityFeedWrapper {
+    padding-top: 15px;
+    margin: 0 20px 10px 0;
+  }
+  
+  @media screen and (max-width: 425px) {
+    .overviewWrapper {
+      flex-direction: column;
+    }
+  
+    .healthStatusContainer {
+      padding: 10px;
+    }
+  
+    .pageTitle {
+      font-size: 18px;
+      margin: 10px;
+    }
+    .dashboardContainer{
+        margin: 10px;
+    }
+  }

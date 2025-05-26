@@ -23,3 +23,9 @@
 .date:hover{
     color: white;
 }
+
+@media screen and (max-width: 425px) {
+    .cardBackground{
+        margin: 15px;
+    }
+}

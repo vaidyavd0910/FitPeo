@@ -1,13 +1,14 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import activityData from '../../../util/ActivityData/ActivityData';
+import styles from './ActivityFeed.module.css';
 
 export default function ActivityFeed() {
   return (
-    <div style={{ background: '#f7f8ff', padding: '20px', borderRadius: '12px',fontFamily:'Arial, sans-serif', color:' rgb(40, 40, 91)' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
-        <h4 style={{ margin: 0 }}>Activity</h4>
-        <span style={{ fontSize: '12px', color: '#888' }}>3 appointments on this week</span>
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h4 className={styles.title}>Activity</h4>
+        <span className={styles.subtitle}>3 appointments on this week</span>
       </div>
 
       <ResponsiveContainer width="100%" height={150}>
@@ -20,5 +21,5 @@ export default function ActivityFeed() {
         </BarChart>
       </ResponsiveContainer>
     </div>
-  )
+  );
 }

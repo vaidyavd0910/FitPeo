@@ -1,5 +1,5 @@
 .container {
-    padding: 1rem;
+    padding: 2px;
     max-width: 1024px;
     margin: 0 auto;
     color:rgb(40, 40, 91);
@@ -73,4 +73,12 @@
   .selectedTime {
     background-color: #4f46e5;
     color: white;
+  }
+  @media screen and (max-width: 425px) {
+    .header {
+        margin: 10px;
+    }
+    .grid{
+        grid-template-columns: repeat(4, 2fr);
+    }
   }
