@@ -4,7 +4,7 @@ import activityData from '../../../util/ActivityData/ActivityData';
 
 export default function ActivityFeed() {
   return (
-    <div style={{ background: '#f7f8ff', padding: '20px', borderRadius: '12px' }}>
+    <div style={{ background: '#f7f8ff', padding: '20px', borderRadius: '12px',fontFamily:'Arial, sans-serif', color:' rgb(40, 40, 91)' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
         <h4 style={{ margin: 0 }}>Activity</h4>
         <span style={{ fontSize: '12px', color: '#888' }}>3 appointments on this week</span>

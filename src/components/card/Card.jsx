@@ -9,8 +9,8 @@ export default function Card({data}) {
             <div className={styles.headingText}>{data.type}</div>
             <div>{Icon && <Icon size={20} />}</div>
         </div>
-        <div>{data.time}</div>
-        <div>{data.name}</div>
+        <div className={styles.time}>{data.time}</div>
+        <div className={styles.name}>{data.name}</div>
     </div>
   )
 }

@@ -1,0 +1,76 @@
+.container {
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    color:rgb(40, 40, 91);
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+  
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .navButtons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+  }
+  
+  .dayCard {
+    border-radius: 0.75rem;
+    padding: 5px;
+    text-align: center;
+    background-color: #f9fafb;
+  }
+  .dayCard:hover{
+    background-color: #e0e7ff;
+  }
+  
+  .selectedDay {
+    background-color: #e0e7ff;
+  }
+  
+  .dayLabel {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .dayDate {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .times {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .timeSlot {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    background-color: #e5e7eb;
+    color: #374151;
+  }
+  
+  .selectedTime {
+    background-color: #4f46e5;
+    color: white;
+  }

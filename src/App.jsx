@@ -24,7 +24,7 @@ function App() {
     <UpcomingSchedule/>
     <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}><ActivityFeed/></div> */}
     <div style={{display:'flex'}}>
-      <div style={{width:'18%'}}><Sidebar/></div>
+      <div style={{width:'18%',height:'100%'}}><Sidebar/></div>
       <div style={{width:'39%'}}>
       <DashboardOverview/>
       </div>
