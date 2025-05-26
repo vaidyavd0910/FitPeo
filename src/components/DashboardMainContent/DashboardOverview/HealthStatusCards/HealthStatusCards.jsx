@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './HealthStatusCards.module.css'
+import { Flex, Progress } from 'antd';
 
 export default function HealthStatusCards({data}) {
      if (!data) return null;
@@ -11,7 +12,7 @@ export default function HealthStatusCards({data}) {
             <div className={styles.text}>{data.title}</div>
         </div>
         <div className={styles.date}>Date: {data.date} </div>
-        <div>chart</div>
+        <Flex gap="small" vertical><Progress percent={data.chart} showInfo={false} strokeColor={data.color}/></Flex>
     </div>
   )
 }
