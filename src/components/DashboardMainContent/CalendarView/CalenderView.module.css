@@ -2,27 +2,26 @@
     padding: 2px;
     max-width: 1024px;
     margin: 0 auto;
-    color:rgb(40, 40, 91);
+    color: rgb(40, 40, 91);
     font-family: Arial, sans-serif;
     font-size: 10px;
-  
   }
   
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
   }
   
   .title {
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: bold;
   }
   
   .navButtons {
     display: flex;
-    gap: 0.5rem;
+    gap: 8px;
   }
   
   .grid {
@@ -32,13 +31,18 @@
   }
   
   .dayCard {
-    border-radius: 0.75rem;
+    border-radius: 12px;
     padding: 5px;
     text-align: center;
     background-color: #f9fafb;
   }
-  .dayCard:hover{
+  
+  .dayCard:hover {
     background-color: #e0e7ff;
+  }
+  
+  .dayCard:hover .selectedSlot {
+    background-color: #2a3394;
   }
   
   .selectedDay {
@@ -46,8 +50,10 @@
   }
   
   .dayLabel {
-    font-size: 0.875rem;
-    color: #6b7280;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(40, 40, 91);
+    padding-bottom: 5px;
   }
   
   .dayDate {
@@ -58,13 +64,24 @@
   .times {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .selectedSlot {
+    background-color: #6a6e9b;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
   }
   
   .timeSlot {
-    font-size: 0.875rem;
-    padding: 0.25rem 0.75rem;
+    font-size: 14px;
+    padding: 4px 12px;
     border-radius: 9999px;
     background-color: #e5e7eb;
     color: #374151;
@@ -74,11 +91,13 @@
     background-color: #4f46e5;
     color: white;
   }
+  
   @media screen and (max-width: 425px) {
     .header {
-        margin: 10px;
+      margin: 10px;
     }
-    .grid{
-        grid-template-columns: repeat(4, 2fr);
+    .grid {
+      grid-template-columns: repeat(4, 2fr);
     }
   }
+  

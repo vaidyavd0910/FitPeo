@@ -1,7 +1,7 @@
-const schedule = {
+ export const schedule = {
     "2021-10-25": {
       day: "Mon",
-      times: ["10:00", "11:00", "12:00"]
+      times: ["10:00", "11:00", "12:00"],
     },
     "2021-10-26": {
       day: "Tues",
@@ -29,5 +29,13 @@ const schedule = {
     }
   };
 
-  export default schedule;
-  
+
+
+  export const selectedTimes = [
+    { date: '2021-10-26', time: '09:00' },
+    { date: '2021-10-28', time: '11:00' },
+    { date: '2021-10-30', time: '12:00' },
+    { date: '2021-10-31', time: '09:00' }
+  ];
+
+   

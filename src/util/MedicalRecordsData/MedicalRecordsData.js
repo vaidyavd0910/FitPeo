@@ -15,7 +15,7 @@ const medicalRecordsData = [
         icon: TbDental,
         date: '26 Oct. 2021',
         chart: '80',
-        color: 'auqa'
+        color: 'green'
     },
     { 
         title: 'Bone',

@@ -5,29 +5,29 @@
 .container {
     display: flex;
     height: 100vh;
-  }
+}
   
-  .sidebar {
+.sidebar {
     width: 18%;
     height: 100%;
-  }
+}
   
-  .overview {
+.overview {
     width: 39%;
-  }
-  
-  .rightPanel {
+}
+
+.rightPanel {
     width: 43%;
     background-color: #f9fafd;
     padding: 0px;
-  }
-  
-  .rightContent {
+}
+
+.rightContent {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .container {
       flex-direction: column;
       height: auto;
@@ -52,5 +52,32 @@
     .sidebar {
       order: 1;
     }
-  }
+}
   
+@media screen  and (min-width:400px ) and (max-width: 768px){
+    .container {
+        flex-direction: column;
+        height: auto;
+        margin: 10px;
+      }
+    
+      .sidebar,
+      .overview,
+      .rightPanel {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+      }
+    
+      .overview {
+        order: 2;
+      }
+    
+      .rightPanel {
+        order: 3;
+      }
+    
+      .sidebar {
+        order: 1;
+      }
+}

@@ -14,34 +14,22 @@ function App() {
 
   return (
     <>
-    {/* <div style={{ padding: "2rem", display: "flex", justifyContent: "center" }}>
-
-      <Header/>
-    </div>
-    <Sidebar/>
-    <Card/>
-    <CalendarView/>
-    <UpcomingSchedule/>
-    <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}><ActivityFeed/></div> */}
-
-  <div className="container">
-  <div className="sidebar">
-    <Sidebar />
-  </div>
-  <div className="overview">
-    <DashboardOverview />
-  </div>
-  <div className="rightPanel">
-    <div className="rightContent">
-      <div>
-        <CalendarView />
+      <div className="container">
+        <div className="sidebar">
+          <Sidebar />
+        </div>
+        <div className="overview">
+          <DashboardOverview />
+        </div>
+        <div className="rightPanel">
+          <div className="rightContent">
+            <div>
+              <CalendarView />
+            </div>
+            <UpcomingSchedule />
+          </div>
+        </div>
       </div>
-      <UpcomingSchedule />
-    </div>
-  </div>
-</div>
-
-
     </>
   )
 }

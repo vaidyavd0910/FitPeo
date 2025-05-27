@@ -18,6 +18,7 @@ export default function DashboardOverview() {
       <div className={styles.overviewWrapper}>
         <AnatomySection />
         <div className={styles.healthStatusContainer}>
+          <h2 className={styles.thisWeek}>This Week</h2>
           {medicalRecordsData.map((record, index) => (
             <HealthStatusCards key={index} data={record} />
           ))}
