@@ -1,6 +1,6 @@
 import React from 'react'
 import cardInfo from '../../../util/DrInfo/UpcomingInfo';
-import Card from '../../Card/Card';
+import Card from '../../card/Card';
 export default function UpcomingSchedule() {
 
   return (
