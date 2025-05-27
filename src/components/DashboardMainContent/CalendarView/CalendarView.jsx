@@ -1,6 +1,6 @@
 import React from 'react';
 import cardInfo from '../../../util/DrInfo/DrInfo';
-import Card from '../../Card/Card';
+import Card from '../../card/Card';
 import { MdFace } from 'react-icons/md';
 import styles from './CalenderView.module.css';
 import { BiSolidLeftArrowAlt, BiSolidRightArrowAlt } from 'react-icons/bi';
