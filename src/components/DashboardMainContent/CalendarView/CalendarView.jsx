@@ -89,7 +89,7 @@ export default function CalendarView() {
         </div>
       </div>
 
-      <div style={{ display: 'flex', gap: '15px', paddingTop: '10px' }}>
+      <div style={{ display: 'flex', gap: '15px', paddingTop: '10px',paddingLeft: '10px'  }}>
         {cardInfo.map((item, index) => (
           <Card key={index} data={item} />
         ))}
